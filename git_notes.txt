@@ -38,8 +38,16 @@ git checkout --<filename>  :  to unmodify the current file and match it with las
 git checkout -f : this reverts the entire respository to latest previous commit (use carefully)
 
 
+Setting up Aliases for commands, to shorten them:
+	E.g. to shorten the command for git status to git st, use following
+		 git config --global alias.st status  -> git st
+			meaning: configure git globally to set status alias as st
 
+	e.g. alias for restore --staged command (unstage):
+            git config --global alias.unstage 'restore --staged --' -> git unstage <filename>
 
+	e.g. alias for showing the last commit (log -p - 1):
+		 git config --global alias.last 'log -p -1' -> git last
 
 
 
@@ -103,6 +111,12 @@ git remote -v : this returns the URLs hosted on git (fetch, push etc.)
 
 git push -u origin master : pushes the local staged files to GITHUB repository
 
+
+STEPS to push files to GITHUB
+1. git status
+2. git add --a or git add .
+3. git commit -m 'message in a string'
+4. git push -u origin master
 
 
 
