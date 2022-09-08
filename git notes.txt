@@ -1,0 +1,67 @@
+q : quit the curent command
+
+git status - to check the status of GIT 3 step achitecture status
+
+git init - initialize the git repository for the first time
+
+git add --a : all the changes will stage
+
+git add 'filename' : the specified file to the staging area
+
+git commit -m 'message string' : commits the staged files for snapshot with a message
+
+
+rm -rf .git : stop git tracking of a folder and remove from git repository
+
+git diff : command compares the staged file and the working file for any difference
+
+git diff --staged : command compares the staged files with the last commit
+
+git commit -a -m 'Direct Commit' : this command directly commits all the tracked files, skipping the staging step. If there is an untracked file, that will not get committed directly
+
+git rm : command to remove (a file or directory)
+
+git mv : move files (e.g. rename a file with this command)
+
+git rm --cached : untracks file from git tracking
+		if we add a tracked file into .gitignore, git will still track the file, unless 		explicitly told not to track the file using above command.
+
+git clone URL foldername : this command clones an existing gitgub repository into our PC as a working respository for us to play with
+
+git commit --amend : amend an existing commit
+
+
+
+
+-- ALL THE GIT LOG COMMANDS --
+
+GITHUB LOG DOCUMENTATION - https://www.git-scm.com/docs/git-log/2.21.0
+
+git log : log of all the changes to be sent
+
+git log -p : shows all the changes committed (actual changes)
+
+git log -p -2 : shows only the latest 2 commit changes, along with the diff, any difference in the code/commits
+
+git log --stat : shows the statistics associated with the logs of the commits
+
+git log --pretty=oneline : displays all commits in one line (includes diff, comments & date)
+
+git log --pretty=short : displays commits in short, without diff, comments & date
+
+git log --pretty=full : displays commits in full, including commit comments & date
+
+git log --since=2.weeks : commits in last 2 weeks
+
+git log --since=2.days : commits in last 2 days etc..
+
+git log --since=2.months or git log --since=2.years etc...
+
+ 
+format:<string> - format allows you to specify which information you want to show. It works a little bit like printf format, with the notable exception that you get a newline with %n instead of \n
+
+e.g. commands:
+	git log --pretty=format:'%h -- %an'
+	git log --pretty=format:'%h -- %ae'
+ 	git log --pretty=format:'%h -- %cn'
+	git log --pretty=format:'%h -- %ce'
