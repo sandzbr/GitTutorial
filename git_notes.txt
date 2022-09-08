@@ -35,6 +35,7 @@ git restore --staged <filename> : to unstage the file
 git checkout --<filename>  :  to unmodify the current file and match it with last commit
 	git checkout doesn't work on .gitignore file
 
+git checkout -f : this reverts the entire respository to latest previous commit (use carefully)
 
 
 
