@@ -41,6 +41,9 @@ git checkout -f : this reverts the entire respository to latest previous commit 
 
 
 
+
+
+
 -- ALL THE GIT LOG COMMANDS --
 
 GITHUB LOG DOCUMENTATION - https://www.git-scm.com/docs/git-log/2.21.0
@@ -73,3 +76,74 @@ e.g. commands:
 	git log --pretty=format:'%h -- %ae'
  	git log --pretty=format:'%h -- %cn'
 	git log --pretty=format:'%h -- %ce'
+
+
+-- GENERATING NEW SSH KEYS FOR GITHUB --
+Reference:
+	https://docs.github.com/en/authentication/connecting-to-github-with-	ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+	
+	https://jdblischak.github.io/2014-09-18-chicago/novice/git/05-sshkeys.html
+
+
+
+-- PUSHING PC CODE TO GITHUB AS A NEW REPOSITORY -- 
+
+git remote : this returns the name of the hosted git website on a service like github where our website or code is hosted
+
+
+git remote add origin git@github.com:sandzbr/GitTutorial.git :
+	git - create on git
+	remote - remote as in hosted on internet
+	add - add
+	origin - name of the website on which our code will be hosted
+	URL - this is the URL to which 'origin' website will point to	
+
+git remote -v : this returns the URLs hosted on git (fetch, push etc.)
+
+
+git push -u origin master : pushes the local staged files to GITHUB repository
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
